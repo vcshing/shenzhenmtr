@@ -21,7 +21,7 @@ $$(document).on('deviceready', function() {
 	interstitialAdId:     "ca-app-pub-3715336230214756/7494478628",  // Optional 
 	tappxIdAndroid:       "/120940746/Pub-14337-Android-3419",        // Optional 
 	tappxShare:           0.1,
-	isTesting: false, // receiving test ads (do not test with real ads as your account will be banned)				// Optional
+	isTesting: true, // receiving test ads (do not test with real ads as your account will be banned)				// Optional
 	bannerAtTop: false, // set to true, to put banner at top
 	overlap: true, // set to true, to allow banner overlap webview
 	offsetStatusBar: false, // set to true to avoid ios7 status bar overlap
@@ -30,6 +30,7 @@ $$(document).on('deviceready', function() {
   });
   
   // Start showing banners (atomatic when autoShowBanner is set to true) 
+
   admob.createBannerView();
   
   // Request interstitial (will present automatically when autoShowInterstitial is set to true) 
