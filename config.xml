@@ -50,8 +50,9 @@
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
 	<plugin name="cordova-admob" />
 	<plugin name="cordova-plugin-inappbrowser" />
+	<plugin name="cordova-plugin-network-information" />
 	<!--	<plugin name="com-sarriaroman-photoviewer" />
-		<plugin name="cordova-plugin-network-information" />
+		
 		-->
 
 </widget>
