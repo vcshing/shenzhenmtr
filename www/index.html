@@ -82,7 +82,7 @@
                     <div class="page-content">
                         <div class="content-block">
 							<div class="pinch-zoom">
-								<img src="image/map.png" style="width:60%"></img>
+							<!--<iframe src="image/map.png" style="width:100%"></iframe>-->
 							</div>
 			
 							<br/>
@@ -142,11 +142,14 @@
           //  });
 
 		document.addEventListener("online", onOnline, false);
-
+		document.addEventListener("offline", onOffline, false);
 		function onOnline() {
 			$(".pinch-zoom").html("<iframe src=\"http://www.szmc.net/page/html5.html\" width=\"100%\" height=\""+($(window).height()-150)+"px\"></iframe>");
 		}
-		  
+		
+		function onOffline() {
+			$(".pinch-zoom").html("<iframe src=\"image/map.png\" width=\"100%\" height=\""+($(window).height()-150)+"px\"></iframe>");
+		} 
 		  
 		$(".onoffswitch-label").bind("click",function(){
 			if($(".onoffswitch-checkbox").is(':checked')=== true){
