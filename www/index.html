@@ -80,12 +80,12 @@
                 <div data-page="index" class="page">
                     <!-- Scrollable page content -->
                     <div class="page-content">
-                        <div class="content-block">
+                     
 							<div class="pinch-zoom">
 							<!--<iframe src="image/map.png" style="width:100%"></iframe>-->
 							</div>
 			
-							<br/>
+							
 						<!--	<div class="onoffswitch">
 								<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
 								<label class="onoffswitch-label" for="myonoffswitch">
@@ -106,7 +106,7 @@
 							-->
                             <!-- Link to another page -->
                            <!-- <a href="about.html">About app</a>-->
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -144,11 +144,11 @@
 		document.addEventListener("online", onOnline, false);
 		document.addEventListener("offline", onOffline, false);
 		function onOnline() {
-			$(".pinch-zoom").html("<iframe src=\"http://www.szmc.net/page/html5.html\" width=\"100%\" height=\""+($(window).height()-100)+"px\"></iframe>");
+			$(".pinch-zoom").html("<iframe src=\"http://www.szmc.net/page/html5.html\" width=\"100%\" height=\""+($(window).height()-30)+"px\"></iframe>");
 		}
 		
 		function onOffline() {
-			$(".pinch-zoom").html("<iframe src=\"image/map.png\" width=\"100%\" height=\""+($(window).height()-100)+"px\"></iframe>");
+			$(".pinch-zoom").html("<iframe src=\"image/map.png\" width=\"100%\" height=\""+($(window).height()-30)+"px\"></iframe>");
 		} 
 		  
 		$(".onoffswitch-label").bind("click",function(){
