@@ -143,15 +143,19 @@
           //  $('div.pinch-zoom').each(function () {
           //      new RTP.PinchZoom($(this), {});
           //  });
-
+		var height = $(window).height();
+		if (height < 400) {
+			height = (height *2)-100;
+		}
+		
 		document.addEventListener("online", onOnline, false);
 		document.addEventListener("offline", onOffline, false);
 		function onOnline() {
-			$(".pinch-zoom").html("<iframe src=\"http://www.szmc.net/page/html5.html\" width=\"100%\" height=\""+($(window).height()-30)+"px\"></iframe>");
+			$(".pinch-zoom").html("<iframe src=\"http://www.szmc.net/page/html5.html\" width=\"100%\" height=\""+(height-20)+"px\"></iframe>");
 		}
 		
 		function onOffline() {
-			$(".pinch-zoom").html("<iframe src=\"image/map.png\" width=\"100%\" height=\""+($(window).height()-30)+"px\"></iframe>");
+			$(".pinch-zoom").html("<iframe src=\"image/map.png\" width=\"100%\" height=\""+(height-20)+"px\"></iframe>");
 		} 
 		  
 		$(".onoffswitch-label").bind("click",function(){
