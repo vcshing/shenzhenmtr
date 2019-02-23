@@ -38,7 +38,7 @@ var mainView = myApp.addView('.view-main', {
 $$(document).on('deviceready', function() {
     console.log("Device is ready!");
     window.open = cordova.InAppBrowser.open;
-
+	alert = function() {};
   
     if (AdMob) AdMob.createBanner({
         adId: "ca-app-pub-5387430380370897/6778084977",
