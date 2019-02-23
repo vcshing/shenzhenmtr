@@ -46,7 +46,7 @@ $$(document).on('deviceready', function() {
         autoShow: true
     });
 	// preppare and load ad resource in background, e.g. at begining of game level
-	if(AdMob) AdMob.prepareInterstitial( {adId:"ca-app-pub-5387430380370897/3750975692", autoShow:false} );
+	if(AdMob) AdMob.prepareInterstitial( {adId:"ca-app-pub-5387430380370897/6465603095", autoShow:false} );
 
 	// show the interstitial later, e.g. at end of game level
 	randomEvent(10, function() {
